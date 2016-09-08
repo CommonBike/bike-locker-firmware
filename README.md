@@ -1,8 +1,18 @@
-Open bike locker 
+Open bike locker  firmware. (Proof of concept)
 
-Proof of concept firmware.
+More info on [commonbike.com](http://commonbike.com).
 
-The firmware version 0.1 supports the following use case(s):
+### Contents
+- [Functionality](#Functionality)
+- [Hardware](#Hardware)
+- [Documentation](#documentation)
+- [API](#API)
+- [Known issues](#known-issues)
+- [License](#License)
+
+## Functionality
+
+The firmware  supports the following use case(s) (version 0.1):
 1) Open empty locker with Mifare card
 - Hold mifare card (eg. OV Chipkaart) in front of card reader
 - Locker opens (servo)
@@ -28,6 +38,7 @@ The firmware version 0.1 supports the following use case(s):
 - Check response for 'open lock command'
 - Clear in use status of the locker (see use case 2)
 
+## Hardware
 Hardware used:
 - SODAQ Autonomo 
   http://shop.sodaq.com/nl/sodaq-autonomo.html
@@ -61,8 +72,28 @@ Hardware connections
 Don't forget to allo make power and GND connections:)
 
 
-Todo:
+
+## Todo:
 Lots ...
 
 - It is probably also possible run the firmware code on the TTN Uno. Will look into 'porting' the code for this. Unfortunately we are just out of reach of a TTN gateway when using the TTN Uno. 
 - Add Real Time Clock (RTC) functionality to support use cases based on usage time (eg. 24h anonymity)
+
+## Documentation
+
+More detailed general documentation about the whole project is located in ....
+
+## API
+
+API info ....
+
+## Known issues
+
+Browse open issues and submit new ones related to the firmware in .... .
+
+
+## License
+
+This is open source under the ..... license. 
+
+
