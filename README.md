@@ -12,6 +12,7 @@ More info on [commonbike.com](http://commonbike.com).
 ## Functionality
 
 The firmware  supports the following use case(s) (version 0.1):
+
 1) Open empty locker with Mifare card
 - Hold mifare card (eg. OV Chipkaart) in front of card reader
 - Locker opens (servo)
