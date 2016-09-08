@@ -89,8 +89,7 @@ API info ....
 
 ## Known issues
 
-Browse open issues and submit new ones related to the firmware in .... .
-
+Browse open issues and submit new ones related to the firmware in [Issuess] (https://github.com/CommonBike/bike-locker-firmware/issues)
 
 ## License
 
