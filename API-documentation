@@ -1,0 +1,41 @@
+# Api Documentation
+
+Disired / to be discussed API
+
+defines for low level lock API  (to be compressed due to transmission through TheThingsnetwork)
+For a lockerblock with n lockers (n = 1 for a singel locker)
+
+## Downlink (from server to locker)
+
+#### Get status
+Returns status. To be used to check if lockers are still alive
+
+#### Open locker (n)
+
+#### Close locker (n)
+
+#### AdCardtoAdmin (UID)
+
+#### RemoveCardfromAdmin (UID)
+
+#### AdCardtoBlackList (UID)
+
+#### RemoveCardfromBlackList (UID)
+
+#### SET_LOCKER_STATE
+sets state of the locker command = 1 byte param1 1 byte (required) state => maps 1:1 to veiligstallen; 0 = vrij, 1 = bezet, 2 = geblokkeerd, 3 = gereserveerd, 4 = buiten werking param2 10 bytes (optional) mifareid
+
+### in uplink direction (from locker to server)
+CMD_GET_SERVER_TIME get current time from server command = 1 byte response from server: 6 bytes with datetime structure (to be defined)
+
+CMD_INVOKE_DOWNLINK see if server has new data for us command = 1 byte response from server: 1 byte with command, x bytes with command parameters (eg. open lock in 1 minute, to be defined)
+
+CMD_SET_LOCKER_STATE sets state of the locker command = 1 byte param1 1 byte (required) state => maps 1:1 to veiligstallen; 0 = vrij, 1 = bezet, 2 = geblokkeerd, 3 = gereserveerd, 4 = buiten werking param2 10 bytes (optional) mifareid
+
+CMD_UPDATE_LOCKER_USER_ID sets the mifareid of the locker that is currently used (eg. anonymity expires after 24h) command = 1 byte param1 10 bytes (required) mifareid
+
+## UPlink (from locker to server)
+see exsistig commands +
+#### Send_status
+send status every .. hour to check if lockers are still alive and fine
+send also status of de lockers 0 = vrij, 1 = bezet, 2 = geblokkeerd, 3 = gereserveerd, 4 = buiten werking param
