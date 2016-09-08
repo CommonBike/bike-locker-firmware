@@ -5,7 +5,7 @@ More info on [commonbike.com](http://commonbike.com).
 - [Functionality](#Functionality)
 - [Hardware](#Hardware)
 - [Documentation](#documentation)
-- [API](#API)
+- [API](#Api)
 - [Known issues](#known-issues)
 - [License](#License)
 
@@ -80,9 +80,9 @@ Lots ...
 
 ## Documentation
 
-More detailed general documentation about the whole project is located in ....
+More detailed general documentation about the whole project is located in 
 
-## API
+## Api
 
 defines for low level lock API (in uplink direction) 
  
