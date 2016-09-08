@@ -1,5 +1,4 @@
-Open bike locker  firmware. (Proof of concept)
-
+# Open bike locker  firmware. (Proof of concept)
 More info on [commonbike.com](http://commonbike.com).
 
 ### Contents
@@ -85,7 +84,24 @@ More detailed general documentation about the whole project is located in ....
 
 ## API
 
-API info ....
+defines for low level lock API (in uplink direction) 
+ 
+CMD_GET_SERVER_TIME get current time from server
+command = 1 byte
+response from server: 6 bytes with datetime structure (to be defined)
+ 
+CMD_INVOKE_DOWNLINK see if server has new data for us
+command = 1 byte
+response from server: 1 byte with command, x bytes with command parameters (eg. open lock in 1 minute, to be defined)   
+ 
+CMD_SET_LOCKER_STATE sets state of the locker
+command = 1 byte
+param1 1 byte (required) state => maps 1:1 to veiligstallen; 0 = vrij, 1 = bezet, 2 = geblokkeerd, 3 = gereserveerd, 4 =  buiten werking 
+param2 10 bytes (optional) mifareid
+ 
+CMD_UPDATE_LOCKER_USER_ID sets the mifareid of the locker that is currently used (eg. anonymity expires after 24h)
+command = 1 byte
+param1 10 bytes (required) mifareid
 
 ## Known issues
 
