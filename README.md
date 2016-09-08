@@ -89,10 +89,12 @@ API info ....
 
 ## Known issues
 
-Browse open issues and submit new ones related to the firmware in [Issuess] (https://github.com/CommonBike/bike-locker-firmware/issues)
+Browse open issues and submit new ones related to the firmware in [Issues] (https://github.com/CommonBike/bike-locker-firmware/issues)
 
 ## License
 
-This is open source under the ..... license. 
+OpenBikeLocker is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or(at your option) any later version.
+OpenBikeLocker is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Lesser General Public License] 
+(http://www.gnu.org/licenses) for more details.
 
 
